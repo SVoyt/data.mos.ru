@@ -19,14 +19,9 @@ if (!resourceId){
     process.exit();
 }
 
-const queryParams = {};
-if (apiKey){
-    queryParams.api_key = apiKey;
-}
-
 const service = new HttpService(path, null);
 
-service.getAndReturnJsonPromise(resourceId, queryParams)
+service.getAndReturnJsonPromise(resourceId, { api_key: apiKey })
 .then( result => {
     
     result.features.forEach((f) => {
