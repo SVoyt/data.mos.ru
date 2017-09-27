@@ -1,0 +1,27 @@
+{
+  "name": "data.mos.ru",
+  "version": "1.0.0",
+  "description": "Parser for data.mos.ru",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SVoyt/data.mos.ru.git"
+  },
+  "keywords": [
+    "data",
+    "mos",
+    "parser"
+  ],
+  "author": "Sergey Voyteshonok",
+  "license": "MIT",
+  "dependencies": {
+    "jsonfile": "^3.0.1",
+    "lodash": "^4.17.4",
+    "optimist": "^0.6.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
